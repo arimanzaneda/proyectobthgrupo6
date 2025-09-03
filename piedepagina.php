@@ -77,7 +77,7 @@
         <h4>Redes sociales</h4>
         <div class="iconos_redes">
           <a href="https://www.facebook.com/share/1BEMekugsu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-            <img src="pngwing.com.png" alt="Facebook" />
+            <img src="http://localhost/tercer/pngwing.com.png" alt="Facebook" />
           </a>
         </div>
       </div>
