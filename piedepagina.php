@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,10 +10,10 @@
     footer{
       background: linear-gradient(to right,#7c0b0b,#a32929);
       color: white;
-      padding: 40px 30px;
-      box-shadow: 0px -4px 10px rgba(0,0,0,0.3);
+      padding: 10px 10px;
       margin-top: 50px;
       font-family: 'Lora', serif;
+      /* O usa 'Cinzel' si prefieres así: font-family: 'Cinzel', serif; */
     }
     .contenedor_pie_pagina{
       display: flex;
@@ -39,11 +40,10 @@
       margin-top: 10px;
     }
     .iconos_redes a img{
-      width: 35px;
-      height: 35px;
-      margin-right: 10px;
+      width: 40px;
+      height: 40px;
       transition: transform 0.3s ease;
-      border-radius: 50%;
+      border-radius: 20%;
       background-color: white;
       padding: 5px;
     }
@@ -77,7 +77,7 @@
         <h4>Redes sociales</h4>
         <div class="iconos_redes">
           <a href="https://www.facebook.com/share/1BEMekugsu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">
-            <img src="124010.png" alt="Facebook" />
+            <img src="pngwing.com.png" alt="Facebook" />
           </a>
         </div>
       </div>
