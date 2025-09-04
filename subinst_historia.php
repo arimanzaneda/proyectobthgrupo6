@@ -19,10 +19,12 @@
       grid-template-rows: 280px 280px 290px 320px;
       grid-template-columns: 24% 24% 24% 24%;
       grid-template-areas:
+      "cabe cabe  cabe cabe"
         "uno uno uno  dos"
         "uno uno uno  tres"
         "cua cin cin cin"
-        "sei sei sie sie";
+        "sei sei sie sie"
+        "pie pie pie pie";
       gap: 20px;
       justify-content: center;
       padding-bottom: 30px;
@@ -61,7 +63,14 @@
       background: #d1c8c1d8;
       z-index: 9;
     }
-
+.header{
+  grid-area: cabe;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.footer{
+  grid-area: pie;
+}
     #uno {
       grid-area: uno;
     }
@@ -175,10 +184,11 @@
 </head>
 
 <body>
-
-  <header>
+  <header class>
     <?php include 'cabecera.php'; ?>
   </header>
+
+
 
   <section id="uno">
     <h2>HISTORIA DEL COLEGIO</h2>
@@ -214,7 +224,7 @@
     <p>Lograr el desarrollo integral de los estudiantes con capacidades cognitivas (científicas y tecnológicos) y habilidades técnicas de procedimientos de vocación productiva y con actitudes socioafectivas de valores éticos de respeto e intereses de superar y mejorar las condiciones de vida personal y familiar/social a través del desarrollo económico, cultural, social, científico y tecnológico, para vivir bien, con contenidos extraídos del currículo base, currículo regionalizado y currículo diversificado.</p>
   </section>
 
-  <footer>
+  <footer class="footer">
     <?php include 'piedepagina.php'; ?>
   </footer>
 

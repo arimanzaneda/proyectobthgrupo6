@@ -19,7 +19,7 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 10px;
       max-width: 1200px;
       margin: auto;
     }

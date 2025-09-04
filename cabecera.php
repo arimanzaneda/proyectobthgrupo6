@@ -13,7 +13,7 @@
   background-color: #570a0a;
 }
 
-header {
+.header1 {
   background-color: #570a0a;
   color: #f7ebdd;
   padding: 1px 2px;
@@ -31,12 +31,12 @@ header {
   text-shadow: 2px 2px 4px #000000;
 }
 
-nav {
+.nav {
   display: flex;
   align-items: center;
 }
 
-nav a {
+.nav a {
   color: #f7ebdd;
   margin: 0px 10px;
   font-weight: bold;
@@ -47,7 +47,7 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
+.nav a:hover {
   background-color: #a02222;
   color: white;
   transform: scale(1.05);
@@ -116,9 +116,9 @@ nav a:hover {
 }
   </style>
 
-  <header>
+  <header class="header1">
   <div class="titulo_unieduthi">UNIDAD EDUCATIVA THIOMOCO</div>
-  <nav>
+  <nav class="nav">
     <a href="portadaprincipal.php">INICIO</a>
 
     <div class="menu-item">

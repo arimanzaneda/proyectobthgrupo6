@@ -20,22 +20,6 @@
             min-height: 100vh;  
         }
 
-        header {
-            background: linear-gradient(to right, #5d1918e4, #661f1faf);
-            width: 100%;
-            padding: 40px 20px; 
-            text-align: center;
-            color: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-        }
-
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            margin: 0;
-            letter-spacing: 2px;
-        }
-
         .info-caja {
             background-color: white;
             border-radius: 16px;
@@ -109,10 +93,7 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Unidad Educativa THIOMOCO</h1>
-    </header>
-
+<?php include ('cabecera.php'); ?>
     <section class="info-caja">
         <h2>Información de Contacto</h2>
   
