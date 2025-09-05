@@ -15,13 +15,7 @@
     h1,h3{
       font-family:'Cinzel', serif;
     }
-    header,footer{
-      background-color:#570a0a;
-      color:beige;
-      padding:20px;
-      text-align:center;
-      box-shadow:0px 4px 6px rgba(0,0,0,0.3);
-    }
+  
     h1{
       font-size:45px;
     }
@@ -71,6 +65,10 @@
 </head>
 <body>
   <header>
+    <?php include 'cabecera.php'; ?>
+  </header>
+
+  <header>
     <h1>Preguntas Frecuentes</h1>
   </header>
   <main class="contenedor_preguntas">
@@ -92,7 +90,7 @@
     </div>
   </main> 
   <footer>
-    &copy; 2025 Colegio Thiomoco - Todos los derechos reservados.
+    <?php include 'piedepagina.php'; ?>
   </footer>
   <script>
     $(document).ready(function(){
