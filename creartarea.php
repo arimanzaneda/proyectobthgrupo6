@@ -1,3 +1,21 @@
+<?php 
+require "universal.php";
+session_start();
+
+if (!isset($_SESSION["id"])){
+  header ("Location: indexx.php ");
+  exit();
+}
+
+$rol= $_SESSION ["rol"];
+$id= $_SESSION ["rol"];
+$id= $_GET ["rol"];
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
