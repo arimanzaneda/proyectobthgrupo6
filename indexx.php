@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-qwertyu
 <head>
     <meta charset="UTF-8">
     <title>UNIDAD EDUCATIVA THIOMOCO</title>
