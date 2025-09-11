@@ -17,3 +17,4 @@ session_destroy();
 header('Location: logueo.php?mensaje=sesion_cerrada');
 exit();
 ?>
+prueba
