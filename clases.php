@@ -1,5 +1,4 @@
 <?php
-fhjf
 require "universal.php";
 session_start();
 ?>
