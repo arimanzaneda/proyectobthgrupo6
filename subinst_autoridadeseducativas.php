@@ -12,8 +12,8 @@
             background: linear-gradient(to right, #fdfbfb, #ebedee);
             color: #333;
             padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
+            /*display: flex;
+            flex-direction: column;*/
             align-items: center;
         }
         h1 {
@@ -42,6 +42,7 @@
             overflow: hidden;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
+            margin-left:450px;
         }
         th {
             background-color: #8B0000;
@@ -49,6 +50,10 @@
             padding: 16px;
             font-size: 1rem;
             letter-spacing: 0.5px;
+        }
+        footer{
+            widht:100%;
+         
         }
         td {
             padding: 14px 16px;
@@ -76,6 +81,7 @@
             color: white;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-left:850px;
         }
         .boton-volver:hover {
             transform: scale(1.05);
@@ -130,9 +136,9 @@
 
     <button class="boton-volver" onclick="history.back()">Volver</button>
 
-    <footer>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
         <?php include 'piedepagina.php'; ?>
-    </footer>
+    
 
     <script src="js/cabecera.js"></script>
 </body>
