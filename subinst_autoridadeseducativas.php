@@ -136,7 +136,7 @@
 
     <button class="boton-volver" onclick="history.back()">Volver</button>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
         <?php include 'piedepagina.php'; ?>
     
 

@@ -142,9 +142,9 @@
     </article>
   </section>
 
-  <footer>
+
     <?php include 'piedepagina.php'; ?>
-  </footer>
+  
 
   <script>
     $(document).ready(function(){

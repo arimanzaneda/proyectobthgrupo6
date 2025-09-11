@@ -152,9 +152,9 @@
 
   <button class="boton-volver" onclick="history.back()"> Volver</button>
 
-  <footer>
+ <Br><br><br><br><Br><br><br><br>
     <?php include 'piedepagina.php'; ?>
-  </footer>
+  
 
   <script src="js/cabecera.js"></script>
 

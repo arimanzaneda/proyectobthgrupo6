@@ -115,13 +115,12 @@
   </div>
 
   <button class="boton-volver" onclick="history.back()">Volver</button>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
   <footer>
     <style>
       footer{
-      position: relative;
-      top:60px
-    }
+              width:100%;   ;
+              }
     </style>
     <?php include 'piedepagina.php'; ?>
   </footer>

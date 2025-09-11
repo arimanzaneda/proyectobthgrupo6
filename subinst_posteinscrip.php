@@ -158,9 +158,16 @@
         </section>
     </div>
 
-    <footer>
-        <?php include 'piedepagina.php'; ?>
+<footer>
+    <style> 
+    footer{
+    width: 100%;
+    }        
+    </style>
+    <?php include 'piedepagina.php'; ?>
     </footer>
+
+    
 
     <script src="js/cabecera.js"></script>
 </body>

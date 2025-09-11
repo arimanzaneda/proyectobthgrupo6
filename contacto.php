@@ -106,8 +106,13 @@
 
     <button class="boton-volver" onclick="history.back()"> Volver</button>
 
-    <footer>
-        |Unidad Educativa THIOMOCO|
+        <footer>
+    <style> 
+    footer{
+    width: 100%;
+    }        
+    </style>
+    <?php include 'piedepagina.php'; ?>
     </footer>
 </body>
 </html>
