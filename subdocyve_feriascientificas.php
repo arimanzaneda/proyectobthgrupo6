@@ -119,8 +119,6 @@
   <footer>
     <style>
       footer{
-
-      
       position: relative;
       top:60px
     }
