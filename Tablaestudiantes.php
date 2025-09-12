@@ -70,6 +70,7 @@
 
     .accion a{
       text-decoration:none;
+
       font-size: 14px;
       color:#1a73e8;
       transition: color 0.3s ease;
