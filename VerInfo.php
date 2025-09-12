@@ -17,7 +17,7 @@
     .contenedor {
       max-width: 900px;
       margin: auto;
-      background: #fff;
+      background: #fff6f0;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #eee;
+      border-bottom: 2px solid #fff6f0;
       padding-bottom: 10px;
       margin-bottom: 20px;
     }
@@ -38,18 +38,18 @@
 
     .header-info h2 {
       margin: 0;
-      color: #333;
+      color: #070707;
     }
 
     .header-info p {
       margin: 2px 0;
-      color: #7e5454;
+      color: #350202;
     }
 
     .header img {
       width: 100px;
       border-radius: 50%;
-      border: 2px solid #ddd;
+      border: 2px solid #fff6f0;
     }
 
     .section {
