@@ -77,7 +77,7 @@ session_start();
         </tr>
         <?php
        $resultado = $con->query("SELECT * FROM clases");
-        while ($row = $resultado->fetch_assoc()) {
+        while ($fila = $resultado->fetch_assoc()) {
     echo "<tr>";
     echo "<td>".$row["idclases"]."</td>";
     echo "<td>".$row["nom_clase"]."</td>";

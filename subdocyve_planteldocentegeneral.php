@@ -79,15 +79,9 @@
     </div>
   </main>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br>><br><br><br><br><br><br>
-    <footer>
-      <style>
-      footer{
-             width:100%;   ;
-            }        
-      </style>
+  <footer>
     <?php include 'piedepagina.php'; ?>
-</footer>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="js/cabecera.js"></script>

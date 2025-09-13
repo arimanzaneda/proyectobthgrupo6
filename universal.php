@@ -5,7 +5,7 @@ $pass = "";
 $db = "bd_vicmac";
 $port = "3306";
 
-try {
+try {       // Manejo de excepciones
     $dsn = "mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4";
     $con = new PDO($dsn, $user, $pass);
     $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

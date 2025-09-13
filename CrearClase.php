@@ -15,7 +15,7 @@ if ($con->query($sql)) {
     echo "Clase creada correctamente.<br>";
     echo "<a href='clases.php'>Volver al listado de clases</a>";
 } else {
-    echo "Error al crear la clase: " . $con->error;
+    echo "Error al crear la clase: ";
     echo "<a href='form.crearclase.html'>Volver al formulario</a>";
 }
 ?>  
