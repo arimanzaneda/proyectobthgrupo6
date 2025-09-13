@@ -20,6 +20,22 @@
             min-height: 100vh;  
         }
 
+        header {
+            background: linear-gradient(to right, #5d1918e4, #661f1faf);
+            width: 100%;
+            padding: 40px 20px; 
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
         .info-caja {
             background-color: white;
             border-radius: 16px;
@@ -93,7 +109,10 @@
     </style>
 </head>
 <body>
-<?php include ('cabecera.php'); ?>
+    <header>
+        <h1>Unidad Educativa THIOMOCO</h1>
+    </header>
+
     <section class="info-caja">
         <h2>Información de Contacto</h2>
   
@@ -106,13 +125,8 @@
 
     <button class="boton-volver" onclick="history.back()"> Volver</button>
 
-        <footer>
-    <style> 
-    footer{
-    width: 100%;
-    }        
-    </style>
-    <?php include 'piedepagina.php'; ?>
+    <footer>
+        |Unidad Educativa THIOMOCO|
     </footer>
 </body>
 </html>

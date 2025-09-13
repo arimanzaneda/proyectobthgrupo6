@@ -349,8 +349,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="navegacion">
             <a href="dashboard.php" class="btn-navegacion">← Volver al Dashboard</a>
             <a href="publicaciones.php?clase_id=<?php echo $clase_id; ?>" class="btn-navegacion">📋 Ver Tablón</a>
-            // 
-            <a href="creartarea.php?clase_id=<?php echo $clase_id; ?>" > Crear Tarea</a> 
+            
         </div>
         
         <?php if (isset($mensaje)): ?>
@@ -403,9 +402,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div class="tarea-info">
                                 <span>Tema: <?php echo htmlspecialchars($tarea['tema']); ?></span>
                                 <span>Entregas: <?php echo $tarea['entregas']; ?></span>
-                                <a href="">Calificar entregas</a>
-                                <a href="formularioeditartarea.php?id_tarea=<?php echo $tarea['idtarea']?>">Editar tarea</a>
-                                <a href="eliminartarea.php?id_tarea=<?php echo $tarea['idtarea']?>">Eliminar tarea</a>
+                                <?php
+                                    $conexion = mysqli_connect("localhost", "root", "", "bd_vicmac");
+                                    $verificar_entrega = "SELECT * FROM entrega WHERE tarea_idtarea =" .$tarea['idtarea']." AND cuenta_iduser = ".$_SESSION['usuario_id'].";";
+                                    $resultado_verificar = mysqli_query($conexion, $verificar_entrega);
+                                    if(mysqli_num_rows($resultado_verificar) > 0){
+                                        echo "<a href='editarEntregaEstudiante.php?idTarea=".$tarea['idtarea']."'>Modificar Tarea</a>";
+                                    }else{
+                                        echo "<a href='subirEntrega.php?idTarea=".$tarea['idtarea']."'>Entregar tarea</a>";
+                                    }
+                                ?>
+                                
                             </div>
                         </div>
                     <?php endforeach; ?>

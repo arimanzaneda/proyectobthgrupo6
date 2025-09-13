@@ -1,9 +1,6 @@
 <?php
 session_start();
-require "restricciones.php"; 
-require "universal.php";   
-soloAdmin(); /* solo el admin puede acceder a esto*/
-
+include 'universal.php';
 
 // acceso de admin
 if (!isset($_SESSION['rol']) || $_SESSION['rol'] !== 'administrador') {

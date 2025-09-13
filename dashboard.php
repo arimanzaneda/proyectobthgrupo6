@@ -440,9 +440,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <?php endif; ?>
                         </div>
                         <div class="clase-acciones">
-                            <a href="clase.php?id=<?php echo $clase['idclases']; ?>" class="btn-accion btn-ver-clase">
+                            <?php
+                                if($rol == "estudiante"){
+                                    echo "<a href='claseEstudiante.php?id=". $clase['idclases']. "' class='btn-accion btn-ver-clase'>
+                                👁️  Ver Clase
+                                    </a>";
+                                }else{
+                                    echo "<a href='clase.php?id=". $clase['idclases']. "' class='btn-accion btn-ver-clase'>
                                 👁️ Ver Clase
-                            </a>
+                                    </a>";
+                                }
+                            ?>
+                            
                             <a href="publicaciones.php?clase_id=<?php echo $clase['idclases']; ?>" class="btn-accion btn-tablon">
                                 📋 Tablón
                             </a>

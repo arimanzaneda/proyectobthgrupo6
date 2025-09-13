@@ -65,6 +65,7 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="css/cabecera.css"/>
 </head>
 <body>
   <header>
