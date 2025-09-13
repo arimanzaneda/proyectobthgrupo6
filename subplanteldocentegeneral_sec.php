@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>DOCENTES SECUNDARIA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lora&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/cabecera.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes Secundaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <style>
-        body {
+        body{
             font-family: 'Lora', serif;
             background: linear-gradient(to right, #fdfbfb, #ebedee);
             color: #333;
@@ -18,7 +18,7 @@
             align-items: center;
         }
 
-        h1 {
+        h1{
             font-family: 'Cinzel', serif;
             text-align: center;
             color: #8B0000;
@@ -29,7 +29,7 @@
             font-weight: bold;
         }
 
-        h1::after {
+        h1::after{
             content: "";
             display: block;
             width: 60px;
@@ -38,8 +38,7 @@
             margin: 10px auto 0;
             border-radius: 2px;
         }
-
-        table {
+        table{
             width: 90%;
             max-width: 900px;
             border-collapse: collapse;
@@ -49,36 +48,30 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
         }
-
-        th {
+        th{
             background-color: #8B0000;
             color: white;
             padding: 16px;
             font-size: 1rem;
             letter-spacing: 0.5px;
         }
-
-        td {
+        td{
             padding: 14px 16px;
             border-bottom: 1px solid #f1f1f1;
             font-size: 0.95rem;
         }
-
-        tr:nth-child(even) {
+        tr:nth-child(even){
             background-color: #f9f9f9;
         }
-
-        tr:hover {
+        tr:hover{
             background-color: #ffe6e6;
             transition: background-color 0.3s ease;
         }
-
-        .cargo {
+        .cargo{
             font-weight: bold;
             color: #B22222;
         }
-
-        .boton-volver {
+        .boton-volver{
             display: block;
             margin: 50px auto 20px auto;
             padding: 12px 28px;
@@ -91,18 +84,19 @@
             font-family: 'Lora', serif;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
-        .boton-volver:hover {
+        .boton-volver:hover{
             transform: scale(1.05);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
-
-        @keyframes fadeIn {
-            from {
+        header,footer{
+            width:100%;
+        }
+        @keyframes fadeIn{
+            from{
                 opacity: 0;
                 transform: translateY(20px);
             }
-            to {
+            to{
                 opacity: 1;
                 transform: translateY(0);
             }
@@ -112,7 +106,7 @@
 <body>
 
 <header>
-    <?php include 'cabecera.php'; ?>
+    <?php include 'cabeceraprincipal.php'; ?>
 </header>
 
 <h1>DOCENTES SECUNDARIA</h1>
@@ -156,9 +150,6 @@
 <footer>
     <?php include 'piedepagina.php'; ?>
 </footer>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="js/cabecera.js"></script>
 
 <script>
     $(document).ready(function(){

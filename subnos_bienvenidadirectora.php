@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bienvenida de la Directora</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida de la directora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
     body{
       font-family: 'Lora', serif;
       margin: 0px;
@@ -64,13 +64,12 @@
         transform: translateY(0);
       }
     }
-  </style>
-  <link rel="stylesheet" href="css/cabecera.css"/>
+    </style>
 </head>
+
 <body>
-  <header>
-    <?php include 'cabecera.php'; ?>
-  </header>
+    
+  <?php include 'cabeceraprincipal.php'; ?>
 
   <main class="contenedor_principal">
     <div class="bienvenida_director">
@@ -89,15 +88,13 @@
     </div>
   </main>
 
-  <footer>
-    <?php include 'piedepagina.php'; ?>
-  </footer>
+  <?php include 'piedepagina.php'; ?>
 
   <script>
     $(document).ready(function(){
       $('.bienvenida_director').hide().fadeIn(1500);
     });
   </script>
-  <script src="js/cabecera.js"></script>
+
 </body>
 </html>

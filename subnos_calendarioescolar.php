@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calendario Escolar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Escolar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
     body{
       font-family: 'Lora', serif;
       background-color: beige;
       color: #570a0a;
       margin: 0;
       padding: 0;
-    }
-    footer{
-      background-color: #570a0a;
-      color: beige;
-      text-align: center;
-      padding: 30px 20px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-      font-family: 'Cinzel', serif;
-      font-size: 28.8px;
-      user-select: none;
     }
     .contenedor_imagen_calendario{
       display: flex;
@@ -77,10 +67,6 @@
       line-height: 27.2px;
     }
     @media (max-width: 768px){
-      footer{
-        font-size: 22.4px;
-        padding: 25px 10px;
-      }
       .fecha_evento{
         font-size: 20.8px;
       }
@@ -92,13 +78,13 @@
         gap: 30px;
       }
     }
-  </style>
-  <link rel="stylesheet" href="css/cabecera.css"/>
+    </style>
 </head>
+
 <body>
-  <header>
-    <?php include 'cabecera.php'; ?>
-  </header>
+  
+  <?php include 'cabeceraprincipal.php'; ?>
+
   <div class="contenedor_imagen_calendario">
     <img class="contenedor_imagen_calendario_img" src="https://glowmess.com/wp-content/uploads/2024/12/calendarios-anuales-2025-para-imprimir.jpg" alt="Calendario Escolar 2025" />
   </div>
@@ -142,10 +128,8 @@
     </article>
   </section>
 
-  <footer>
-    <?php include 'piedepagina.php'; ?>
-  </footer>
-
+  <?php include 'piedepagina.php'; ?>
+  
   <script>
     $(document).ready(function(){
       $('.contenedor_eventos').css('opacity', 1);
@@ -154,6 +138,6 @@
       });
     });
   </script>
-  <script src="js/cabecera.js"></script>
+
 </body>
 </html>

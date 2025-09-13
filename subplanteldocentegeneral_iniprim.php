@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Docentes Inicial y Primaria</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/cabecera.css" />
-  <style>
-    * {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docentes Inicial y Primaria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lora&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <style>
+    *{
       box-sizing: border-box;
     }
-
-    body {
+    body{
       font-family: 'Lora', serif;
       background: linear-gradient(135deg, #fdfbfb, #ebedee);
       color: #333;
@@ -22,8 +21,7 @@
       min-height: 100vh;
       animation: fadeIn 1000ms ease-in-out;
     }
-
-    h1#titulo-docentes {
+    h1#titulo-docentes{
       font-family: 'Cinzel', serif;
       font-size: 36px;
       color: #8b0000;
@@ -31,8 +29,7 @@
       text-align: center;
       position: relative;
     }
-
-    h1#titulo-docentes::after {
+    h1#titulo-docentes::after{
       content: "";
       display: block;
       width: 60px;
@@ -41,16 +38,14 @@
       margin: 10px auto 0;
       border-radius: 2px;
     }
-
-    section#contenido-docentes {
+    section#contenido-docentes{
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 40px 20px;
     }
-
-    table#tabla-docentes {
+    table#tabla-docentes{
       width: 90%;
       max-width: 900px;
       border-collapse: collapse;
@@ -60,35 +55,29 @@
       box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
       animation: fadeIn 1500ms ease-in-out;
     }
-
-    th {
+    th{
       background-color: #8b0000;
       color: #fff;
       padding: 16px;
       font-size: 16px;
     }
-
-    td {
+    td{
       padding: 14px 16px;
       border-bottom: 1px solid #f1f1f1;
       font-size: 15px;
     }
-
-    tr:nth-child(even) {
+    tr:nth-child(even){
       background-color: #f9f9f9;
     }
-
-    tr:hover {
+    tr:hover{
       background-color: #ffe6e6;
       transition: background-color 300ms ease;
     }
-
-    .cargo {
+    .cargo{
       font-weight: bold;
       color: #b22222;
     }
-
-    button#boton-volver {
+    button#boton-volver{
       margin: 50px auto 20px auto;
       padding: 12px 28px;
       font-size: 16px;
@@ -100,38 +89,35 @@
       transition: transform 300ms ease, box-shadow 300ms ease;
       font-family: 'Lora', serif;
     }
-
-    button#boton-volver:hover {
+    button#boton-volver:hover{
       transform: scale(1.05);
       box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     }
-
-    @keyframes fadeIn {
-      0% {
+    @keyframes fadeIn{
+      0%{
         opacity: 0;
         transform: translateY(20px);
       }
-      100% {
+      100%{
         opacity: 1;
         transform: translateY(0);
       }
     }
-
-    @media (max-width: 600px) {
-      table {
+    @media (max-width: 600px){
+      table{
         width: 100%;
       }
-
-      h1#titulo-docentes {
+      h1#titulo-docentes{
         font-size: 28px;
       }
     }
-  </style>
+    </style>
 </head>
+
 <body>
 
   <header>
-    <?php include 'cabecera.php'; ?>
+    <?php include 'cabeceraprincipal.php'; ?>
   </header>
 
   <section id="contenido-docentes">
@@ -170,8 +156,6 @@
     <?php include 'piedepagina.php'; ?>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="js/cabecera.js"></script>
   <script>
     $(document).ready(function(){
       $('#boton-volver').hover(function(){
