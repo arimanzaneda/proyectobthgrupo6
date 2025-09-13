@@ -7,30 +7,50 @@
   <style>
     body {
       font-family: "Lora", serif;
-      background-color: #4a0000;
+      background: linear-gradient(135deg, #4a0000, #7a0000);
       margin: 0;
       padding: 20px;
       position: relative;
       top: 3.5cm;
+      color: #2c0a0a;
+      transition: background 0.5s ease;
     }
 
     .contenedor {
       max-width: 900px;
       margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(145deg, #fff0f0, #ffeaea);
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25),
+        0 4px 10px rgba(255, 105, 97, 0.3);
+      transition: box-shadow 0.3s ease, background 0.3s ease;
+    }
+    .contenedor:hover {
+      box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.35),
+        0 6px 15px rgba(255, 105, 97, 0.5);
+      background: linear-gradient(145deg, #fff5f5, #ffdede);
     }
 
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+      border-bottom: 3px solid #d47a7a;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
       gap: 20px;
+      background: linear-gradient(90deg, #f9d6d6, #f2baba);
+      border-radius: 12px;
+      box-shadow:
+        inset 0 2px 5px rgba(255, 255, 255, 0.7),
+        0 4px 10px rgba(196, 92, 92, 0.4);
+      transition: background 0.4s ease;
+    }
+    .header:hover {
+      background: linear-gradient(90deg, #fce3e3, #f7c7c7);
     }
 
     .header-info {
@@ -39,14 +59,20 @@
 
     .header-info h2 {
       margin: 0;
-      color: #333;
+      color: #4a0000;
       font-size: 1.8rem;
+      text-shadow: 1px 1px 2px #b36b6b;
+      transition: color 0.3s ease;
+    }
+    .header-info h2:hover {
+      color: #7a0000;
     }
 
     .header-info p {
       margin: 2px 0;
       color: #7e5454;
       font-size: 1.1rem;
+      font-style: italic;
     }
 
     .header img {
@@ -54,46 +80,77 @@
       height: 100px;
       object-fit: cover;
       border-radius: 50%;
-      border: 2px solid #ddd;
+      border: 3px solid #d47a7a;
+      box-shadow:
+        0 4px 10px rgba(196, 92, 92, 0.6),
+        0 0 15px rgba(255, 105, 97, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .header img:hover {
+      transform: scale(1.1);
+      box-shadow:
+        0 6px 20px rgba(196, 92, 92, 0.8),
+        0 0 25px rgba(255, 105, 97, 0.7);
     }
 
     .section {
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     .section h3 {
       color: #460202;
-      margin-bottom: 10px;
-      border-bottom: 1px solid #916c6c;
-      padding-bottom: 5px;
-      font-size: 1.4rem;
+      margin-bottom: 12px;
+      border-bottom: 2px solid #b36b6b;
+      padding-bottom: 6px;
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 1px #d9a6a6;
+      transition: color 0.3s ease;
+    }
+    .section h3:hover {
+      color: #7a0000;
     }
 
     .section-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px;
+      gap: 15px;
     }
 
     .item {
-      background: #ccafaf;
-      padding: 10px;
-      border-radius: 6px;
+      background: linear-gradient(135deg, #d9bcbc, #c78f8f);
+      padding: 15px 12px;
+      border-radius: 10px;
+      box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.15),
+        inset 0 2px 5px rgba(255, 255, 255, 0.3);
+      transition: box-shadow 0.3s ease, background 0.3s ease, transform 0.3s ease;
+      cursor: default;
+    }
+    .item:hover {
+      box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.25),
+        inset 0 3px 7px rgba(255, 255, 255, 0.5);
+      background: linear-gradient(135deg, #e6c1c1, #d18a8a);
+      transform: translateY(-5px);
     }
 
     .item .letra {
       display: block;
-      font-weight: bold;
-      color: #2c0a0a;
-      margin-bottom: 4px;
+      font-weight: 700;
+      color: #3a0a0a;
+      margin-bottom: 6px;
+      text-shadow: 1px 1px 1px #b36b6b;
     }
 
     .item p {
       margin: 0;
-      color: #000000;
+      color: #1a0a0a;
+      font-weight: 500;
     }
 
-  
+    /* Media Queries */
+
     @media (max-width: 600px) {
       body {
         padding: 10px;
@@ -117,7 +174,6 @@
       }
     }
 
-  
     @media (min-width: 601px) and (max-width: 900px) {
       .contenedor {
         padding: 15px;
@@ -196,3 +252,4 @@
 
 </body>
 </html>
+
