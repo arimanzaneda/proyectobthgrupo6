@@ -23,6 +23,7 @@
     footer {
       margin: 0;
       padding: 0;
+     
     }
 
     .contenedor {
@@ -30,6 +31,11 @@
       flex-direction: column;
       gap: 20px;
     }
+
+   .fila{
+    height: 450px;
+
+   }
 
     section {
       background: #d1c8c1;
@@ -64,12 +70,13 @@
       font-family: 'Lora', serif;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-      display: block;
-      margin: 0 auto;
-    }
+img {
+  width: 100%;          
+  height: 100%;         
+  object-fit: cover;     
+  border-radius: 12px;   
+  display: block;
+}
 
     @keyframes animacionentrada {
       0% {
@@ -105,25 +112,24 @@
 <body>
 
 <header>
-  <?php include 'cabecera.php'; ?>
+  <?php include 'cabeceraprincipal.php'; ?>
 </header>
 
   <main class="contenedor">
+
+    
+
+    <div class="fila">
 
     <section id="uno">
       <h2>HISTORIA DEL COLEGIO</h2>
       <p>El establecimiento fue creada y fundada el 23 de junio de 1972 a consecuencia del constante crecimiento escolar de niñas y niños en la región; fundación que se realizó bajo el cargo del Director Lucio García y el profesor Mario Rivera Soria, a la fecha cuenta con 53 años de servicio a la niñez y juventud de la región del Distrito Escolar de Vinto.</p>
       <p>En la Unidad Educativa de Thiomoco con el paso del tiempo surge la necesidad de la ampliar el nivel secundario que es necesario para la continuación de sus estudios de los estudiantes del nivel primario primaria. El año 2015 gracias el apoyo de las autoridades se consolidó la ampliación del nivel secundario cuya resolución ministerial salió el 24 de agosto de 2015 que permite el funcionamiento con los niveles de inicial, primario y secundario.</p>
       <p>Actualmente la Unidad Educativa THIOMOCO cuenta con 720 estudiantes distribuidos en los tres niveles inicial, primaria y secundaria, 1 Directora, 36 maestros, 1 secretaria, 1 portera. La creación de esta Institución Educativa se debió específicamente a la necesidad imperante que vivía la población rural como es el Cantón Machajmarca que cada año se ve el crecimiento poblacional en sus diferentes niveles.</p>
+     
     </section>
-
-    <div class="fila">
       <section id="dos">
         <img src="img/IMG-20250729-WA0028.jpg" alt="Imagen Caja 2" />
-      </section>
-
-      <section id="tres">
-        <img src="img/IMG-20250729-WA0024.jpg" alt="Imagen Caja 3" />
       </section>
     </div>
 
@@ -152,7 +158,10 @@
 
   </main>
 
+  <footer>
     <?php include 'piedepagina.php';     ?>
+    
+  </footer>
 
   <script src="js/cabecera.js"></script>
 </body>

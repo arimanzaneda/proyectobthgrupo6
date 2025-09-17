@@ -2,18 +2,18 @@
 session_start();
 require "universal.php";
 
-/* revisa si el usuario esta logeado */
+
 if (!isset($_SESSION['usuario_id']) || !isset($_SESSION['rol'])) {
     header("Location: logueo.php?error=no_autenticado");
     exit();
 }
 
-/*guarda */
+
 $id = $_SESSION['usuario_id'];
 $rol = $_SESSION['rol'];
 $nombre = $_SESSION['nombre'] ?? 'Usuario';
 
-/*no deja entrar si esta bloqueado*/
+
 $stmt = $con->prepare("SELECT bloqueado FROM cuenta WHERE iduser = ?");
 $stmt->execute([$id]);
 $usuario = $stmt->fetch();

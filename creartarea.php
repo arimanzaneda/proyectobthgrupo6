@@ -188,6 +188,22 @@ require "universal.php";
     box-shadow: 0 5px 15px rgba(87, 1, 14, 0.4);
   }
 }
+
+@media (max-width:700px) {
+     
+ .container{
+    flex-direction: column;}
+
+
+    .form-tarea, .paneldere{
+        width: 98%;
+
+
+    }
+ }
+
+
+
   </style>
 </head>
 <body>
@@ -205,35 +221,33 @@ require "universal.php";
         <textarea id="instrucciones" name="instrucciones" placeholder="Ingrese instrucciones de la tarea (este paso es opcional)"></textarea>
 
 
-        <!-- <label for="adjuntar" class="adjuntar">📎 Adjuntar archivo</label> -->
-        <!-- <input type="file" id="adjuntar" name="adjuntar" accept=".pdf,.txt,.docx,.jpg,.png" > -->
-
+        <label for="adjuntar" class="adjuntar">📎 Adjuntar archivo</label> 
+         <input type="file" id="adjuntar" name="adjuntar" accept=".pdf,.txt,.docx,.jpg,.png" > 
 
         <button type="submit" class="crear">SUBIR</button>
       </section>
 
 
       <aside class="paneldere">
-        <!-- <label for="para">Para</label> <!--Para quién va la tarea-->
-        <!-- <select id="para" name="para"> -->
-          <!-- <option value="curso">Curso 1</option> -->
-          <!-- <option value="curso">Curso 2</option> -->
-          <!-- <option value="curso">Curso 3</option> -->
-          <!-- <option value="curso">Curso 4</option> -->
-        <!-- </select>  -->
-      
+       <label for="para">Para</label> <!--Para quién va la tarea-->
+       <select id="para" name="para"> 
+        <option value="curso">Curso 1</option> 
+        <option value="curso">Curso 2</option> 
+        <option value="curso">Curso 3</option> 
+        <option value="curso">Curso 4</option> 
+        </select> 
 
 
-        <!-- <label for="asignar">Asignar a</label> A que estudiantes va -->
-        <!-- <input type="text" id="asignar" name="asignar" placeholder="Alumno"> -->
+        <label for="asignar">Asignar a</label> <!--A que estudiantes va -->
+        <input type="text" id="asignar" name="asignar" placeholder="Alumno">
 
 
         <label for="puntos">Puntos</label>
         <input type="number" id="puntos" name="puntos" placeholder="Puntaje de la tarea ">
 
 
-        <!-- <label for="fecha">Fecha de entrega</label> -->
-        <!-- <input type="date" id="fecha" name="fecha"> -->
+        <label for="fecha">Fecha de entrega</label> 
+        <input type="date" id="fecha" name="fecha"> 
 
 
         <label for="tema">Tema</label>
@@ -244,8 +258,8 @@ require "universal.php";
         </select>
 
 
-        <!-- <label for="rubrica">Rúbrica</label>
-        <input type="text" id="rubrica" name="rubrica" placeholder="+ Rúbrica"> -->
+       <label for="rubrica">Rúbrica</label>
+        <input type="text" id="rubrica" name="rubrica" placeholder="+ Rúbrica"> 
 
 
         <div class="botones">

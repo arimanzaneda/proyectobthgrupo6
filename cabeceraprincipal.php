@@ -138,8 +138,8 @@
       <div class="menu-item">
         <button class="submenu-btn">INSTITUCIÓN ▼</button>
         <div class="submenu">
-          <a href="subinst_hist0ria.php">Nuestra Historia</a>
-          <a href="subinst_hist0ria.php">Visión y Misión</a>
+          <a href="subinst_historia.php">Nuestra Historia</a>
+          <a href="subinst_historia.php">Visión y Misión</a>
           <a href="subinst_reglamentointerno0.php">Reglamento interno</a>
           <a href="subinst_autoridadeseducativas.php">Autoridades educativas</a>
           <a href="subinst_posteinscrip.php">Postulaciones-Inscripciones</a>
